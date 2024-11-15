@@ -1,0 +1,5 @@
+collection: con esto indicamos la colección que queremos leer
+getDocs: Con esto obtenemos documentos de una consulta, mayormente de una colección
+query: permite hacer consultas especificas sobre una colección
+La función fetchProductos es asíncrona y se encarga de obtener datos de Firebase
+<Route path="/" element={usuario ? <Inicio /> : <Navigate to="/login" />} /> /*Si el usuario está autenticado (usuario no es null), se muestra el componente <Inicio />. Si el usuario no está autenticado, se usa <Navigate to="/login" /> para redirigir a la página de login.

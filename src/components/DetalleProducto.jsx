@@ -13,7 +13,12 @@ function DetalleProducto({ producto }) {
 }
 
 DetalleProducto.propTypes = {
-  producto: PropTypes.node
-}
+  producto: PropTypes.shape({
+    nombre: PropTypes.string.isRequired,
+    descripcion: PropTypes.string.isRequired,
+    precio: PropTypes.number.isRequired,
+    sku: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default DetalleProducto;
