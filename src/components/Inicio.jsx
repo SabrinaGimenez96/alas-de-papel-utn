@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
-import Producto from './Producto' 
+import Producto from './Producto'
 import { collection, getDocs } from 'firebase/firestore';
-import db  from '../firebase'
-import { signOut, getAuth } from 'firebase/auth';
+import db from '../firebase'
+import './estilos/inicio.css';
+import SeccionPrincipal from './SeccionPrincipal';
+import Nav from './Nav';
 
-const auth = getAuth();
 
 function Inicio() {
 
@@ -21,16 +22,22 @@ function Inicio() {
   }, []);
 
   return (
-    <div>
-        <h1>Lista de libros</h1> <button onClick={() => signOut(auth)}> Cerrar sesion</button>
-        <div>
-            {productos.map((producto) => (
+    <div className='contenedor-libros'>
+      <Nav />
+      <div className="seccion">
+        <SeccionPrincipal />
+      </div>
+      <div className="titulo">
+        <h1>Lista de libros</h1>
+      </div>
+      <div className='lista-libros'>
+        {productos.map((producto) => (
 
-            <Producto key={producto.sku} producto={producto}/>             
-            
-            ))}
-        </div>
-        
+          <Producto key={producto.sku} producto={producto} />
+
+        ))}
+      </div>
+
     </div>
   )
 }

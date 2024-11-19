@@ -1,17 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import './estilos/producto.css';
 
 
 function Producto({ producto }) {
   return (
-    <div>
+    <div className='contenedor-producto'>
+      <div className="datos-producto">
       <img src={producto.img} alt={producto.img} />
         <h3>{producto.nombre}</h3>
         <p>Precio: ${producto.precio}</p>
         <p>SKU: {producto.sku}</p>
-        <p>{producto.descripcion}</p>
-        <Link to={`/producto/${producto.sku}`}>Ver Detalle</Link>        
+        <Link to={`/producto/${producto.sku}`} className='link-producto'>Ver Detalle</Link>       
+      </div> 
     </div>
   )
 }

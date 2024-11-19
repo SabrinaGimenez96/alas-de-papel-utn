@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=Gowun+Dodum&display=swap');
+
+:root {
+    --principal: #A8D5BA;
+    --secundario: #FFFBF0;
+    --resaltador: #FF6F61;
+    --neutro: #D7B19D;
+    --oscuro: #232222
+}
+
+.contenedor-seccion {
+    background-image: url('./imagenes/fondo_seccion2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-color: var(--secundario);*/
+    height: 90%;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid var(--secundario);
+    border-radius: 10px;
+}
+
+.contenedor-seccion h1 {
+    text-align: center;
+    color: white;
+    font-family: "Bona Nova", serif;
+    font-size: 60px;
+    padding: 30px;
+    text-shadow: var(--neutro) 1px 0 10px;
+}

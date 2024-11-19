@@ -1,16 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import './estilos/ventanaDetalle.css';
 
 function DetalleProducto({ producto }) {
   return (
-    <div>
-        <img src={producto.img} alt={producto.img} />
-        <h2>{producto.nombre}</h2>
-        <p>Descripción: {producto.descripcion}</p>
+    <div className='contenedor-detalle'>
+      <div className="detalles">
+          <h1>{producto.nombre}</h1>
+        <p>{producto.descripcion}</p>
         <p>Precio: ${producto.precio}</p>
         <p>SKU: {producto.sku}</p>
-        <Link to={`/`}>Volver</Link> 
+        <Link to={`/`} className='link-volver' >Volver</Link>
+      </div>
     </div>
   )
 }

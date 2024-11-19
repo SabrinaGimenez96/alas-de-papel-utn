@@ -1,0 +1,30 @@
+:root {
+    --principal: #A8D5BA;
+    --secundario: #FFFBF0;
+    --resaltador: #FF6F61;
+    --neutro: #D7B19D;
+    --oscuro: #232222
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#logout-btn {
+    height: 35px;
+    width: 10%;
+    border-radius: 15px;
+    background-color: var(--neutro);
+    border: none;
+    cursor: pointer;
+    color: var(--secundario);
+    text-shadow: var(--resaltador) 1px 0 10px;
+    margin-bottom: 10px;
+}
+
+#logout-btn:hover {
+    background-color: var(--resaltador);
+}

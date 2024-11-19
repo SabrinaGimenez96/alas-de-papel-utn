@@ -8,7 +8,7 @@ import DetalleProducto from './DetalleProducto';
 function PaginaDetalle() {
   const { sku } = useParams();
   const [producto, setProducto] = useState(null);
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProducto = async () => {

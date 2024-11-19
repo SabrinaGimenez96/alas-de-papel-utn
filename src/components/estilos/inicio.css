@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --principal: #A8D5BA;
+    --secundario: #FFFBF0;
+    --resaltador: #FF6F61;
+    --neutro: #D7B19D;
+    --oscuro: #232222
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./imagenes/fondo_inicio3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.seccion {
+    height: 50rem;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-libros {
+    display: grid;
+    justify-items: center;
+    width: 90vw;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo-logout h1 {
+    padding: 0;
+}
+
+.lista-libros {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 65px 30px;
+    justify-items: center;
+}
+
