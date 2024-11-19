@@ -47,7 +47,7 @@ h1 {
     flex-direction: column;
     height: 70vh;
     width: 50vh;
-    gap: 55px;
+    gap: 35px;
     background: rgba(255,251,240,0.5);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -58,6 +58,7 @@ h1 {
 h2 {
     text-align: center;
     color: var(--resaltador);
+    padding-bottom: 15px;
     font-size: 200%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -67,7 +68,7 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
 }
 
 h4 {
