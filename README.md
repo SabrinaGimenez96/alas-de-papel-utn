@@ -25,7 +25,7 @@ Antes de comenzar, asegúrate de tener instalados:
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/SabrinaGimenez96/alas-de-papel-utn.git
    cd tp-final-utn
    ```
 
